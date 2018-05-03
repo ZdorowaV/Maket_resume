@@ -12,9 +12,13 @@
 }
 .page {
     width: 100%;
+    max-height: 3165px;
     margin: 0;
     font-family: 'MyriadPro_LightSemiExt';
     font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .page__line {
     max-width: 830px;
@@ -23,14 +27,21 @@
     margin-top: 100px;
     background-color: aqua;
 }
+.page__line__right {
+    max-width: 1265px;
+    max-height: 1265px;
+}
+.part__user-info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 550px;
+}
 .part__user-avatar {
     width: 465px;
     height: 465px;
-    margin-left: 200px;
 }
 .part__user-name {
     height: 74px;
-    margin-left: 210px;
     margin-top: 74px;
     color: #000000;
     font-family: "MyriadPro_LightSemiExt";
@@ -39,7 +50,6 @@
 }
 .part__user-surname {
     height: 85px;
-    margin-left: 210px;
     margin-top: 26px;
     color: #000000;
     font-family: "MyriadPro-Bold";
@@ -48,7 +58,6 @@
 }
 .part__user-lastname {
     height: 34px;
-    margin-left: 265px;
     margin-top: 45px;
     color: #000000;
     font-family: "MyriadPro-Bold";
@@ -58,26 +67,150 @@
 .part__head {
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
 }
 .part__icon {
-    width: 150px;
-    height: 150px;
+    width: 143px;
+    height: 143px;
+    margin-right: 20px;
 }
-.part__text {
-    margin-top: 41px;
-    margin-left: 24px;
-    margin-bottom: 0px;
+.part__title {
     height: 57px;
+    font-size: 82px;
     color: #3d6cb0;
     font-family: "MyriadPro-Bold";
-    font-size: 82px;
-    font-weight: 700;
     text-transform: uppercase;
+    margin-right: 20px;
+}
+.part__title__small {
+    height: 28px;
+    font-size: 33px;
+}
+.part__title__normal {
+    height: 35px;
+    color: black;
+    font-size: 40px;
+    font-family: "MyriadPro-SemiCn";
+}
+.part__title__large {
+    height: 35px;
+    font-size: 40px;
+}
+.part__title__large__black {
+    height: 35px;
+    font-size: 51px;
+    color: black;
 }
 .part__line {
     width: 100%;
     height: 11px;
-    margin-top: 78px;
-    margin-left: 20px;
     background-color: #3d6cb0;
+}
+.part__text {
+    font-family: "MyriadPro-SemiCn";
+    font-size: 31px;
+    font-weight: 400;
+    color: #000000;
+    max-width: 1110px;
+}
+.part__text__middle {
+    font-size: 35px;
+}
+.part__text__large {
+    height: 40px;
+    font-size: 45px;
+}
+.part__text__bold {
+    font-weight: 700;
+}
+.part__content {
+    margin-top: 70px;
+    max-width: 755px;
+    height: 355px;
+    display: flex;
+}
+.part__content__center {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.part__column-left {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.part__column-right {
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.part__progress {
+    display: flex;
+    margin-bottom: 40px;
+}
+.part__progress-item {
+    width: 30px;
+    height: 30px;
+    background-color: #3d6cb0;
+    border-radius: 20px;
+    list-style: none;
+    margin-right: 20px;
+}
+.part__progress-item__grey1:nth-child(n+10){
+    background-color: #e6e6e6;
+}
+.part__progress-item__grey2:last-child {
+    background-color: #e6e6e6;
+}
+.part__progress-item__grey3:nth-child(n+6) {
+    background-color: #e6e6e6;
+}
+.part__progress-item__grey4:last-child {
+    background-color: #e6e6e6;
+}
+.part__list {
+    margin-top: 64px;
+    padding-left: 24px;
+}
+.part__list-item {
+    list-style: none;
+    display: flex;
+}
+.part__list-item-icon {
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border-radius: 35px;
+    margin-right: 20px;
+}
+.part__head-list {
+    max-width: 855px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.part__soft {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 460px;
+}
+.part__information {
+    max-width: 555px;
+    margin-top: 50px;
+}
+.part__line-progress {
+    height: 35px;
+}
+.part__line-progress__grey {
+    background-color: #e6e6e6;
+    margin-top: 15px;
+}
+.part__line-progress__blue {
+    background-color: #3d6cb0;
+}
+.part__line-progress__width50 {
+    width: 50%;
 }
